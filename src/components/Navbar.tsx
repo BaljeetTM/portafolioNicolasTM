@@ -4,9 +4,11 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { SobreMiDialog } from './SobreMiDialog';
+import { Menu, X } from 'lucide-react';
 
 export const Navbar = () => {
   const [showDialog, setShowDialog] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
@@ -40,7 +42,20 @@ export const Navbar = () => {
               </a>
             </div>
           </div>
+          {/* Botón menú móvil */}
+          <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
+        {/* Menú móvil desplegable */}
+        {isOpen && (
+          <div className="md:hidden mt-4 space-y-2 px-4">
+            <a href="#inicio" onClick={() => setIsOpen(false)} className="block hover:text-blue-600">Inicio</a>
+            <a href="#proyectos" onClick={() => setIsOpen(false)} className="block hover:text-blue-600">Proyectos</a>
+            <a href="#habilidades" onClick={() => setIsOpen(false)} className="block hover:text-blue-600">Habilidades</a>
+            <a href="#contacto" onClick={() => setIsOpen(false)} className="block hover:text-blue-600">Contacto</a>
+          </div>
+        )}
       </nav>
       {/* Diálogo */}
       <SobreMiDialog open={showDialog} onClose={() => setShowDialog(false)} />

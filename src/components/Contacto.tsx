@@ -29,7 +29,7 @@ export default function Contacto() {
     };
 
     return (
-        <div id="contacto" className="w-full max-w-2xl mx-auto mt-12 px-4">
+        <div id="contacto" className="w-full max-w-2xl mx-auto mt-12 px-4 mb-4">
             <Card>
                 <CardHeader>
                     <CardTitle className="text-2xl">Contáctame</CardTitle>

@@ -1,6 +1,4 @@
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, } from "@/components/ui/dialog";
-
-
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 
 
 interface SobreMiDialogProps {
@@ -11,18 +9,19 @@ interface SobreMiDialogProps {
 export const SobreMiDialog = ({ open, onClose }: SobreMiDialogProps) => {
     return (
         <Dialog open={open} onOpenChange={onClose}>
-            <DialogContent style={{ maxWidth: '850px', width: '100%' }}>
+            <DialogContent className="w-[90vw] sm:max-w-lg md:max-w-2xl">
                 <DialogHeader>
-                    <DialogTitle>Sobre mí</DialogTitle>
+                    <DialogTitle className="text-center">Sobre mí</DialogTitle>
                 </DialogHeader>
+
                 <div className="flex flex-col items-center text-center gap-4">
                     <img
                         src="/fotomia.jpeg"
                         alt="Foto de Nicolás"
-                        className="h-70 w-auto rounded-lg"
+                        className="w-40 h-52 object-cover rounded-lg"
                     />
 
-                    <div className="text-base text-gray-850 text-center max-w-xl">
+                    <div className="text-sm text-gray-700 text-center max-w-prose space-y-3 px-2">
                         <p>
                             Mi nombre es Nicolás Tapia Molina y soy estudiante de Ingeniería Civil en
                             Computación e Informática en la Universidad Católica del Norte (UCN), en Chile.
@@ -55,5 +54,5 @@ export const SobreMiDialog = ({ open, onClose }: SobreMiDialogProps) => {
                 </div>
             </DialogContent>
         </Dialog>
-    )
-}
+    );
+};
