@@ -30,7 +30,7 @@ const timelineData = [
 
 export const Timeline = () => {
   return (
-    <div id="proyectos" className="w-full px-4 md:px-8 lg:px-12 max-w-8xl mx-auto my-8">
+    <div id="timeline" className="w-full px-4 md:px-8 lg:px-12 max-w-8xl mx-auto my-8">
       <Card>
         <section className="px-4 py-12 max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-10">Mi Trayectoria</h2>

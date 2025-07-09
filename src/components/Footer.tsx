@@ -27,7 +27,7 @@ export const Footer = () => {
               <a href="#proyectos" className="text-gray-300 hover:text-white transition">Proyectos</a>
               <a href="#habilidades" className="text-gray-300 hover:text-white transition">Habilidades</a>
               <a href="#contacto" className="text-gray-300 hover:text-white transition">Contacto</a>
-              <a href="#" className="text-gray-300 hover:text-white transition">Sección extra</a>
+              <a href="#timeline" className="text-gray-300 hover:text-white transition">Sección extra</a>
             </div>
 
             {/* Redes sociales */}

@@ -37,7 +37,7 @@ export const Navbar = () => {
               <a href="#contacto" className="text-black-700 hover:text-black">
                 Contacto
               </a>
-              <a href="#" className="text-black-700 hover:text-black">
+              <a href="#timeline" className="text-black-700 hover:text-black">
                 Sección extra
               </a>
             </div>
@@ -54,6 +54,7 @@ export const Navbar = () => {
             <a href="#proyectos" onClick={() => setIsOpen(false)} className="block hover:text-blue-600">Proyectos</a>
             <a href="#habilidades" onClick={() => setIsOpen(false)} className="block hover:text-blue-600">Habilidades</a>
             <a href="#contacto" onClick={() => setIsOpen(false)} className="block hover:text-blue-600">Contacto</a>
+            <a href="#timeline" onClick={() => setIsOpen(false)} className="block hover:text-blue-600">Sección Extra</a>
           </div>
         )}
       </nav>
