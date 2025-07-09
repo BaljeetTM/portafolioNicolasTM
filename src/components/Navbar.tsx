@@ -26,21 +26,18 @@ export const Navbar = () => {
               Sobre Mi
             </button>
             <span>|</span>
-            <a href="#" className="text-black-700 hover:text-black">
+            <a href="#proyectos" className="text-black-700 hover:text-black">
               Proyectos
             </a>
-            <a href="#" className="text-black-700 hover:text-black">
+            <a href="#habilidades" className="text-black-700 hover:text-black">
+              Habilidades
+            </a>
+            <a href="#contacto" className="text-black-700 hover:text-black">
               Contacto
             </a>
-          </div>
-
-          {/* Botón Login */}
-          <div>
-            <Link href="/login">
-              <button className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
-                Login
-              </button>
-            </Link>
+            <a href="#" className="text-black-700 hover:text-black">
+              Sección extra
+            </a>
           </div>
         </div>
       </div>

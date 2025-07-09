@@ -1,8 +1,15 @@
+'use client';
+
 import Link from 'next/link';
+import { useState } from 'react';
+import { SobreMiDialog } from './SobreMiDialog';
 
 
 export const Footer = () => {
+  const [showDialog, setShowDialog] = useState(false);
+  
   return (
+    <>
     <footer className="bg-gray-900 text-white py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
@@ -15,9 +22,13 @@ export const Footer = () => {
           {/* Centro - Links */}
           <div className="flex space-x-6">
             <a href="#" className="text-gray-300 hover:text-white transition">Inicio</a>
-            <a href="#" className="text-gray-300 hover:text-white transition">Sobre mí</a>
-            <a href="#" className="text-gray-300 hover:text-white transition">Proyectos</a>
-            <a href="#" className="text-gray-300 hover:text-white transition">Contacto</a>
+            <button onClick={() => setShowDialog(true)} className="text-gray-300 hover:text-white">
+              Sobre Mi
+            </button>
+            <a href="#proyectos" className="text-gray-300 hover:text-white transition">Proyectos</a>
+            <a href="#habilidades" className="text-gray-300 hover:text-white transition">Habilidades</a>
+            <a href="#contacto" className="text-gray-300 hover:text-white transition">Contacto</a>
+            <a href="#" className="text-gray-300 hover:text-white transition">Sección extra</a>
           </div>
 
           {/* Derecha - Redes sociales */}
@@ -32,5 +43,8 @@ export const Footer = () => {
         </div>
       </div>
     </footer>
+    {/* Diálogo */}
+      <SobreMiDialog open={showDialog} onClose={() => setShowDialog(false)} />
+    </>
   );
 };
