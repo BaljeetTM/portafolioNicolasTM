@@ -18,7 +18,7 @@ export default function ViewFront() {
         <>
             <div className="min-h-screen bg-gray-200">
                 <Navbar />
-                <div className="flex flex-col items-center justify-center h-screen relative h-64 md:h-120">
+                <div className="flex flex-col items-center justify-center text-center h-[80vh] px-4">
                     <img src="/avataaars.png" alt="Logo pequeño" className="h-70 w-auto" />
                     <h1 className="text-4xl font-bold mb-4">Bienvenido a mi portafolio</h1>
                     <p className="text-lg text-gray-850 text-center max-w-xl">
