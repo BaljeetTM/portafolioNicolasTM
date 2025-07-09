@@ -1,4 +1,4 @@
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "./ui/dialog";
 
 
 interface SobreMiDialogProps {
@@ -20,7 +20,7 @@ export const SobreMiDialog = ({ open, onClose }: SobreMiDialogProps) => {
                         alt="Foto de Nicolás"
                         className="w-40 h-52 object-cover rounded-lg"
                     />
-
+                    <DialogDescription></DialogDescription>    
                     <div className="text-sm text-gray-700 text-center max-w-prose space-y-3 px-2">
                         <p>
                             Mi nombre es Nicolás Tapia Molina y soy estudiante de Ingeniería Civil en

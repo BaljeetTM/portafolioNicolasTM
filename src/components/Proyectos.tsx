@@ -34,13 +34,13 @@ export default function Proyectos() {
         {
             titulo: "Desarrollo de E-Commerce",
             imagenes: ["/fotoEcom.png", "/fotoEcom1.png"],
-            descripcion: `Este proyecto consiste en una plataforma de comercio electrónico desarrollada siguiendo los requerimientos del taller
+            descripcion: <span>Este proyecto consiste en una plataforma de comercio electrónico desarrollada siguiendo los requerimientos del taller
                             de la asignatura <strong>Introducción al Desarrollo Web/Móvil</strong> en la Universidad Católica del Norte.
                             La aplicación permite a los usuarios explorar un catálogo de productos, filtrar y ordenar
                             artículos, gestionar un carrito de compras, realizar pedidos y mantener un historial de transacciones.
                             Se implementaron tres roles distintos: <strong>visitante</strong>, <strong>cliente</strong> y <strong>administrador</strong>, cada uno con funcionalidades específicas.
                             El administrador puede gestionar usuarios y productos mediante un panel avanzado.
-                            Desarrollado con <strong>HTML5</strong>, <strong>CSS</strong> y <strong>JavaScript puro</strong>, bajo una arquitectura cliente-servidor modular y escalable.`,
+                            Desarrollado con <strong>HTML5</strong>, <strong>CSS</strong> y <strong>JavaScript puro</strong>, bajo una arquitectura cliente-servidor modular y escalable.</span>,
             github: [
                 { label: "Frontend", url: "https://github.com/BaljeetTM/taller2-frontend" },
                 { label: "Backend", url: "https://github.com/BaljeetTM/TallerWebMovil" }

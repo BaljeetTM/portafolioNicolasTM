@@ -7,6 +7,7 @@ import Habilidades from "@/components/Habilidades";
 import { Navbar } from "@/components/Navbar";
 import Proyectos from "@/components/Proyectos";
 import { SobreMiDialog } from "@/components/SobreMiDialog";
+import { Timeline } from "@/components/Timeline";
 import { useState } from "react";
 
 
@@ -34,6 +35,7 @@ export default function ViewFront() {
                 </div>
                 <Proyectos />
                 <Habilidades />
+                <Timeline/>
                 <Contacto />
                 <Footer />
             </div>
